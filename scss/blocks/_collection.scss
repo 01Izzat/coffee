@@ -1,0 +1,123 @@
+.collection {
+  position: relative;
+  margin-bottom: 188px;
+
+  .collection__list {
+    position: relative;
+
+    .collection__list-item {
+      display: inline-block;
+      text-align: center;
+      margin-left: 30px;
+
+      .list-item {
+        margin-left: 51px;
+      }
+    }
+
+    h4 {
+      font-family: "Fraunces", serif;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    p {
+      width: 255px;
+      color: $blackish;
+    }
+  }
+
+  h3 {
+    font-family: "Fraunces", serif;
+    position: relative;
+    font-size: 150px;
+    line-height: 1;
+    text-align: center;
+    color: #83888f;
+    opacity: 0.5;
+    background-color: #fefcf7;
+    margin-bottom: -70px;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        180deg,
+        rgba(254, 252, 247, 0.0001) 0%,
+        #fefcf7 100%
+      );
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      width: 689px;
+      font-size: 96px;
+      line-height: 1;
+    }
+
+    .collection__list {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      .collection__list-item {
+        display: flex;
+        margin: 0;
+
+        .list-item {
+          margin: 0;
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 25px;
+          width: 282px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 668px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      width: 286px;
+      font-size: 40px;
+      line-height: 72px;
+      margin-bottom: 13px;
+    }
+
+    .collection__list {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      padding: 0;
+
+      .collection__list-item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+
+        .list-item {
+          margin: 0;
+        }
+      }
+
+      img {
+        width: 200px;
+        height: 151px;
+      }
+    }
+  }
+}

@@ -1,0 +1,170 @@
+.process {
+  padding-left: 85px;
+  margin-bottom: 200px;
+  .process__title {
+    color: $gray;
+    font-family: "Fraunces", serif;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 80px 0;
+  }
+
+  .process__circle {
+    position: relative;
+    margin-bottom: 67px;
+
+    .circle-wrapper {
+      display: inline-flex;
+    }
+
+    .circle__round {
+      width: 31px;
+      height: 31px;
+      border: 2px solid $green;
+      border-radius: 50%;
+      margin-right: 349px;
+      position: relative;
+      z-index: 2;
+      background: $white;
+    }
+
+    .circle__line {
+      position: absolute;
+      top: 44%;
+      left: 1%;
+      width: 760px;
+      height: 1px;
+      border: 1px solid $gold;
+      background: $gold;
+      display: inline-block;
+      border-radius: 0;
+      margin: 0;
+      z-index: 1;
+    }
+  }
+
+  .process__list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 64px;
+    display: flex;
+    gap: 95px;
+
+    .process__list-item {
+      display: inline-block;
+    }
+
+    .process__list-number {
+      font-family: "Fraunces", serif;
+      color: $gold;
+      font-size: 72px;
+      line-height: 72px;
+    }
+    .process__list-title {
+      color: $blackish;
+      font-family: "Fraunces", serif;
+      font-size: 32px;
+      line-height: 36px;
+      margin: 0;
+      margin-top: 38px;
+      margin-bottom: 43px;
+      width: 255px;
+    }
+    .process__list-txt {
+      margin: 0;
+      width: 285px;
+      color: $blackish;
+      font-size: $fsz;
+    }
+  }
+
+  .process__link {
+    @include button;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    margin-bottom: 144px;
+    padding: 0;
+
+    .process__title {
+      margin: 0 0 40px 0;
+    }
+
+    .process__circle {
+      .circle__line {
+        width: 467px;
+      }
+
+      .circle__round {
+        margin-right: 202px;
+      }
+    }
+
+    .process__list {
+      gap: 10px;
+      margin-bottom: 44px;
+      .process__list-item {
+        .process__list-title {
+          font-size: 28px;
+          line-height: 32px;
+          width: 223px;
+        }
+
+        .process__list-txt {
+          font-size: 15px;
+          line-height: 25px;
+          width: 223px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 668px) {
+    text-align: center;
+    margin-bottom: 120px;
+    padding: 0;
+
+    .process__title {
+      margin: 0 0 80px 0;
+    }
+
+    .process__circle {
+      display: none;
+
+      .circle__line {
+        width: 467px;
+      }
+
+      .circle__round {
+        margin-right: 202px;
+      }
+    }
+
+    .process__list {
+      gap: 56px;
+      margin-bottom: 79px;
+      flex-direction: column;
+      align-items: center;
+
+      .process__list-item {
+        text-align: center;
+
+        .process__list-title {
+          font-size: 28px;
+          line-height: 32px;
+          width: 327px;
+        }
+
+        .process__list-txt {
+          font-size: 15px;
+          line-height: 25px;
+          width: 327px;
+        }
+      }
+    }
+
+    .process__link {
+      align-items: center;
+    }
+  }
+}

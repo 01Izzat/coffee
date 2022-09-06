@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header__link {
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .header {
+    position: relative;
+  }
+}
